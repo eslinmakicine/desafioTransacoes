@@ -17,4 +17,8 @@ public class TransacoesServices {
     public List<Transacoes> obterTransacoes(Long idConta) {
         return transacoesRepository.findAll();
     }
+
+    public Transacoes criarTransacoes(Transacoes transacoes) {
+        return transacoesRepository.save(transacoes);
+    }
 }
