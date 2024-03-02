@@ -26,7 +26,8 @@ import java.time.LocalDateTime;
 public class Transacoes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long idTransacao;
+    private Long idConta;
     @Enumerated(EnumType.STRING)
     private Tipo tipo;
     @Enumerated(EnumType.STRING)
